@@ -1,0 +1,131 @@
+@use "_variables.scss" as col;
+
+.features-top {
+    background-color: col.$white-main;
+}
+
+.features-top__container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+.features-top__left {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+}
+
+.features-top__subheading, .features-top__heading {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.features-top__heading {
+    margin: 15px 0 20px;
+    line-height: 40px;
+}
+
+.features-top__description {
+    font-family: "Montserrat Regular";
+    font-size: 16px;
+    color: col.$grey-main;
+    line-height: 20px;
+}
+
+
+.features-top__list {
+    li {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat Medium";
+        font-size: 16px;
+        color: col.$orange-main;
+        margin-top: 15px;
+        &:first-child {
+            margin-top: 20px;
+        }
+        &::before {
+            font: var(--fa-font-solid);
+            font-size: 10px;
+            content: "\f00c";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 14px;
+            height: 14px;
+            text-align: center;
+            background-color: col.$orange-main;
+            color: col.$white-main;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.features-top__button {
+    margin-top: 60px;
+}
+
+.features-top__right {
+    width: 540px;
+    height: auto;
+    background-color: #000;
+    border-radius: 8px;
+    background: url(../img/constructionImage.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 5px;
+        height: 100%;
+        background-color: col.$white-main;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.features-bottom {
+    background-color: col.$grey-secondary;
+}
+
+.features-bottom__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+.feature-bottom__item {
+    max-width: 350px;
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: col.$orange-main;
+    display: flex;
+    flex-flow: row;
+}
+
+.feature-bottom__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.feature-bottom__item-name {
+    margin-left: 20px;
+    &::after {
+        content: "";
+        display: block;
+        margin-top: 5px;
+        width: 95px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: col.$white-main;
+    }
+}

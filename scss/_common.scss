@@ -5,15 +5,59 @@
     margin: 0 auto;
 }
 
-.button {
+.button, .button-alt {
     display: flex;
     width: fit-content;
     background-color: col.$orange-main;
+    color: col.$white-main;
     padding: 15px 40px;
-    border: 0;
+    border: 3px solid col.$orange-main;
+    box-sizing: border-box;
     border-radius: 8px;
     text-decoration: none;
     font-size: 22px;
     font-family: "OpenSans SemiBold";
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+        color: col.$orange-main;
+        background-color: col.$white-main;
+    }
+}
+
+.button-alt {
+    background-color: col.$white-main;
+    color: col.$orange-main;
+
+    &:hover {
+        color: col.$white-main;
+        background-color: col.$orange-main;
+    }
+}
+
+.nav__menu-elem_selected {
+    font-weight: bold;
+}
+
+.subheading {
+    font-family: "Roboto SemiBold";
+    text-transform: uppercase;
+    font-size: 16px;
+    color: col.$orange-main;
+    text-align: center;
+}
+
+.heading {
+    font-family: "Montserrat Bold";
+    text-transform: uppercase;
+    font-size: 32px;
+    color: col.$black-main;
+    text-align: center;
+}
+
+.item-name {
+    font-family: "Montserrat SemiBold";
+    font-size: 20px;
+    text-transform: uppercase;
     color: col.$white-main;
 }
