@@ -1,0 +1,57 @@
+.home {
+    background: url(../img/homePageBackground.png) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.home__container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    position: relative;
+}
+
+.home__left {
+    display: flex;
+    flex-flow: column;
+    margin-top: 170px;
+    max-width: 455px;
+}
+
+.home__company-name {
+    font-size: 28px;
+    font-family: "Roboto Regular";
+}
+
+.home__company-slogan {
+    font-size: 52px;
+    font-family: "OpenSans Bold";
+    margin-top: 15px;
+}
+
+.home__button {
+    margin-top: 60px;
+}
+
+.home__right {
+    width: 700px;
+    height: 700px;
+    border-radius: 60px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    overflow: hidden;
+}
+
+.home__image {
+    width: 125%;
+    height: 125%;
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    background: url(../img/homePageImage.png) center center no-repeat;
+    background-size: cover;
+    transform: rotate(-45deg);
+}
