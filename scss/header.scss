@@ -1,5 +1,4 @@
-@use "_variables.scss" as col;
-@use "_fonts.scss" as fn;
+@use "_colors.scss" as col;
 
 .header {
     background-color: col.$header-background;
@@ -17,7 +16,8 @@
     box-sizing: border-box;
 }
 
-.header__left, .header__right {
+.header__left,
+.header__right {
     display: flex;
     flex-flow: row;
 }
@@ -27,11 +27,13 @@
     flex-flow: row;
     align-items: center;
     margin-left: 15px;
+
     img {
         filter: invert(100%);
         width: 24px;
         height: 24px;
     }
+
     &:first-child {
         margin-left: 0px;
     }
@@ -39,13 +41,16 @@
 
 .header__info-text {
     margin-left: 10px;
+
     p {
         font-size: 12px;
     }
+
     p:first-of-type {
         font-family: "OpenSans SemiBold";
         color: col.$white-main;
     }
+
     p:last-of-type {
         font-family: "OpenSans Regular";
         color: col.$grey-main;
@@ -57,12 +62,16 @@
     img {
         filter: invert(100%);
     }
-    a, img {
+
+    a,
+    img {
         width: 24px;
         height: 24px;
     }
+
     a {
         margin-left: 10px;
+
         &:first-child {
             margin-left: 0px;
         }
@@ -91,6 +100,7 @@
     display: flex;
     flex-flow: row;
     align-items: center;
+
     p {
         margin-left: 10px;
         font-size: 22px;
@@ -106,9 +116,11 @@
 .nav__menu {
     display: flex;
     flex-flow: row;
+
     li {
         margin-left: 25px;
         list-style: none;
+
         &:first-child {
             margin-left: 0px;
         }

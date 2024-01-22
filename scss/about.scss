@@ -1,0 +1,29 @@
+@use "_colors.scss" as col;
+
+.about {
+    background-color: col.$white-main;
+}
+
+.about__container {
+    display: flex;
+    flex-flow: column;
+}
+
+.about__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.about__item-name {
+    color: col.$black-main;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.about__item {
+    display: flex;
+    flex-flow: row;
+    width: 400px;
+}

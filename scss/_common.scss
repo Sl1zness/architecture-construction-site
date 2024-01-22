@@ -1,11 +1,13 @@
-@use "_variables.scss" as col;
+@use "_colors.scss" as col;
 
 .container {
     width: 75%;
     margin: 0 auto;
+    padding: 65px 0px;
 }
 
-.button, .button-alt {
+.button,
+.button-alt {
     display: flex;
     width: fit-content;
     background-color: col.$orange-main;
@@ -53,6 +55,7 @@
     font-size: 32px;
     color: col.$black-main;
     text-align: center;
+    margin: 20px 0 80px 0;
 }
 
 .item-name {
