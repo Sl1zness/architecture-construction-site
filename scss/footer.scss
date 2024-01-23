@@ -1,0 +1,86 @@
+
+@use "_colors.scss" as col;
+
+.footer {
+    background-color: col.$grey-blue-main;
+}
+
+.footer__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.footer__company-name {
+    font-family: "OpenSans SemiBold";
+    font-size: 22px;
+    color: col.$orange-main;
+}
+
+.footer__about-company {
+    font-family: "OpenSans Regular";
+    font-size: 16px;
+    color: col.$grey-main;
+    margin: 40px 0;
+    line-height: 20px;
+}
+
+.footer__socials {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    a {
+        display: flex;
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0px;
+        }
+
+        img {
+            filter: invert(100%);
+        }
+    }
+}
+
+.footer__column {
+    display: flex;
+    flex-flow: column;
+
+    ul {
+        margin-top: 30px;
+
+        li {
+            font-family: "OpenSans SemiBold";
+            font-size: 16px;
+            margin-top: 20px;
+    
+            &:first-child {
+                margin-top: 0px;
+            }
+
+            a {
+                color: col.$grey-main;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        .footer__column-header {
+            text-align: center;
+        }
+
+        ul {
+            columns: 2 120px;
+        }
+    }
+}
+
+.footer__column-header {
+    color: col.$white-main;
+    font-family: "OpenSans Bold";
+    font-size: 20px;
+    text-align: left;
+}

@@ -1,0 +1,70 @@
+@use "_colors.scss" as col;
+
+.blog {
+    background-color: col.$grey-secondary;
+}
+
+.blog__container {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.blog__viewport {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.blog__item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.blog__item-img {
+    width: 82px;
+    height: 82px;
+    object-fit: cover;
+}
+
+.blog__item-headline {
+    font-family: "Montserrat Medium";
+    font-size: 22px;
+    margin: 25px 0 10px;
+}
+
+.blog__item-description {
+    font-family: "OpenSans Regular";
+    font-size: 18px;
+    max-width: 900px;
+}
+
+.blog__pagination {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.blog__page {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: col.$grey-main;
+    margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.blog__page_selected {
+    background-color: col.$orange-main;
+}

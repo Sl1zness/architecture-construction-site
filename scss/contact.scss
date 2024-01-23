@@ -1,0 +1,25 @@
+@use "_colors.scss" as col;
+
+.contact {
+    background-color: col.$orange-main;
+}
+
+.contact__container {
+    padding: 40px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__text {
+    font-family: "Montserrat Bold";
+    font-size: 24px;
+    color: col.$white-main;
+}
+
+.contact__button-alt {
+    &:hover {
+        border-color: col.$white-main;
+    }
+}
