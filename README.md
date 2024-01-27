@@ -5,3 +5,4 @@ Simple landing created using [this](https://www.figma.com/community/file/1244693
 Instruments:
 - HTML (+BEM)
 - CSS (SCSS)
+- JS
