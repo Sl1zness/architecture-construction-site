@@ -1,5 +1,16 @@
 let header = document.querySelector('.nav'); // nav menu
-header.style.top = `70px`;
+let necessaryTopPos = window.innerWidth > 710 ? 70 : 80;
+if (window.innerWidth > 710) {
+    necessaryTopPos = 70;
+} else if (window.innerWidth > 440 && window.innerWidth <= 710) {
+    necessaryTopPos = 80;
+} else if (window.innerWidth > 340 && window.innerWidth <= 440) {
+    necessaryTopPos = 150;
+} else {
+    necessaryTopPos = 200;
+}
+
+header.style.top = `${necessaryTopPos}px`;
 
 let prevPosition = window.scrollY;
 let currentPosition = 0;
@@ -16,9 +27,9 @@ window.onscroll = () => {
             header.style.top = `${currentNavMenuTopPos - (window.scrollY - prevPosition)}px`;
         }
     } else {
-        if (currentPosition <= 70) {
-            if (currentNavMenuTopPos >= 70) {
-                currentNavMenuTopPos = 70;
+        if (currentPosition <= necessaryTopPos) {
+            if (currentNavMenuTopPos >= necessaryTopPos) {
+                currentNavMenuTopPos = necessaryTopPos;
                 header.style.top = `${currentNavMenuTopPos}px`;
             } else {
                 header.style.top = `${currentNavMenuTopPos + (prevPosition - window.scrollY)}px`;
@@ -26,7 +37,7 @@ window.onscroll = () => {
         }
 
         if (currentPosition == 0) {
-            currentNavMenuTopPos = 70;
+            currentNavMenuTopPos = necessaryTopPos;
             header.style.top = `${currentNavMenuTopPos}px`;
         }
     }
