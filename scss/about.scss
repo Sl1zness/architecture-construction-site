@@ -16,14 +16,20 @@
     row-gap: 40px;
 }
 
-.about__item-name {
-    color: col.$black-main;
-    text-transform: capitalize;
-    margin-left: 20px;
-}
-
 .about__item {
     display: flex;
     flex-flow: row;
     width: 400px;
+}
+
+.about__item-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.about__item-name {
+    color: col.$black-main;
+    text-transform: capitalize;
+    margin-left: 20px;
 }

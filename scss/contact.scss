@@ -7,9 +7,10 @@
 .contact__container {
     padding: 40px 0px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .contact__text {
@@ -19,6 +20,10 @@
 }
 
 .contact__button-alt {
+    span {
+        white-space: pre;
+    }
+
     &:hover {
         border-color: col.$white-main;
     }

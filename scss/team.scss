@@ -12,9 +12,9 @@
 .team__list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: 1;
-    gap: 10px;
+    gap: 20px;
 }
 
 .team__member {
