@@ -25,6 +25,12 @@
         color: col.$orange-main;
         background-color: col.$white-main;
     }
+
+    &:focus {
+        outline-width: 4px;
+        outline-color: col.$black-main;
+        outline-style: solid;
+    }
 }
 
 .button-alt {
