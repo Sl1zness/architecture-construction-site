@@ -357,6 +357,16 @@
     }
 }
 
+@media all and (max-width: 300px) {
+    .footer__column {
+        &:nth-child(2) {
+            ul {
+                columns: 1;
+            }
+        }
+    }
+}
+
 
 // COPYRIGHT ADAPTATION
 @media all and (max-width: 501px) {
